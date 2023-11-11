@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('get scm') {
       steps {
-	  git credentialsId: 'github_credentials', url: 'https://github.com/Sahaja1/spring3-mvc-maven-xml-hello-world.git'
+	  git credentialsId: 'github_credentials', url: 'https://github.com/Sahaja1/springapp-seedproject'
        }
     }
 	stage('mavenbuild'){
