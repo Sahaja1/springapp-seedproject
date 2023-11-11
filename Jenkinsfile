@@ -1,5 +1,8 @@
 pipeline {
  agent any
+ tools {
+    maven "maven3"
+  }
   stages {
     stage('get scm') {
       steps {
